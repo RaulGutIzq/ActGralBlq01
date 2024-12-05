@@ -1,0 +1,116 @@
+/* Estilo para el cuerpo */
+body {
+    background-color: #f8f9fa; /* Color de fondo neutro claro */
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  /* Estilo para la barra de navegación */
+  .navbar {
+    background-color: #2c2c2c; /* Color de fondo oscuro para la barra de navegación */
+  }
+  
+  .navbar-brand, .navbar .dropdown-toggle {
+    color: #fff; /* Color de texto blanco */
+  }
+  
+  .navbar .dropdown-toggle:hover {
+    color: #dcdcdc; /* Color de texto gris al pasar el ratón */
+  }
+  
+  /* Estilo para las tarjetas de productos */
+  .product-card {
+    transition: transform 0.3s ease;
+    max-width: 200px; /* Ajustar el tamaño máximo de las tarjetas */
+    margin: auto; /* Centrar las tarjetas */
+    background-color: #fff; /* Color de fondo blanco */
+    border: 1px solid #dcdcdc; /* Borde gris claro */
+  }
+  
+  .product-card img {
+    height: 150px; /* Reducir la altura de las imágenes */
+    object-fit: cover; /* Asegurar que las imágenes conserven su proporción */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.1); /* Suavizar el hover */
+    background-color: #f1f1f1; /* Color de fondo gris claro al pasar el ratón */
+    border-color: #bfbfbf; /* Borde gris medio al pasar el ratón */
+  }
+  
+  .product-card .card-title, .product-card .card-text {
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  /* Estilo para el carrito */
+  .dropdown-menu {
+    background-color: #fff; /* Color de fondo blanco */
+    color: #333; /* Color de texto oscuro */
+    border: 1px solid #dcdcdc; /* Borde gris claro */
+  }
+  
+  .dropdown-menu .dropdown-header, .dropdown-item {
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1; /* Color de fondo gris claro al pasar el ratón */
+  }
+  
+  /* Estilo para los botones */
+  .btn-primary {
+    background-color: #333; /* Color de fondo oscuro */
+    border-color: #333; /* Borde oscuro */
+  }
+  
+  .btn-primary:hover {
+    background-color: #555; /* Color de fondo gris oscuro al pasar el ratón */
+    border-color: #555; /* Borde gris oscuro al pasar el ratón */
+  }
+  
+  .btn-danger {
+    background-color: #2c2c2c; /* Color de fondo oscuro */
+    border-color: #2c2c2c; /* Borde oscuro */
+  }
+  
+  .btn-danger:hover {
+    background-color: #555; /* Color de fondo gris oscuro al pasar el ratón */
+    border-color: #555; /* Borde gris oscuro al pasar el ratón */
+  }
+  
+  /* Estilo para el contenedor de productos */
+  #product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinear tarjetas al centro */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+  
+  /* Estilo para el carrito de compras */
+  #cart-container {
+    display: none;
+    max-width: 300px;
+    word-wrap: break-word; /* Asegura que el texto no desborde */
+  }
+  
+  #cart-container.show {
+    display: block; /* Mostrar el carrito cuando tenga la clase `show` */
+  }
+  
+  #cart-items {
+    max-height: 200px;
+    overflow-y: auto; /* Scroll si hay demasiados productos */
+  }
+  
+  /* Estilo para el botón del carrito */
+  #cart-button {
+    cursor: pointer;
+    background-color: #2c2c2c; /* Fondo oscuro inicial */
+    color: #fff; /* Color de texto inicial */
+    border-color: #2c2c2c; /* Borde oscuro */
+  }
+  
+  #cart-button:hover {
+    background-color: #555; /* Fondo gris oscuro al pasar el ratón */
+    color: #fff; /* Color de texto blanco */
+  }
+  
